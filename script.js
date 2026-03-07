@@ -5,4 +5,7 @@ for (let i = 1; i <= 256; i++) {
     div.classList.add("grid-cell");
     container.appendChild(div);
 
+    div.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = "green";
+    })
 }
