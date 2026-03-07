@@ -45,6 +45,6 @@ cleanBoard.addEventListener("click", () => {
     const allCells = document.querySelectorAll(".grid-cell");
 
     allCells.forEach(cell => {
-        cell.style.backgroundColor = "white";
+        cell.style.backgroundColor = "";
     })
 })
