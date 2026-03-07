@@ -11,7 +11,7 @@ body {
     align-items: center;
     background-color: #eef4ed;
     flex-direction: column;
-
+    gap: 50px;
 }
 
 .grid-cell {
