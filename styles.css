@@ -42,3 +42,8 @@ button:hover {
     background-color: #38b000;
     color: white;
 }
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
