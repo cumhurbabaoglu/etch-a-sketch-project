@@ -46,6 +46,5 @@ cleanBoard.addEventListener("click", () => {
 
     allCells.forEach(cell => {
         cell.style.backgroundColor = "white";
-        // 22. burada "white" yerine hardcode olarak yazmadan ""; şeklinde ekle 
     })
 })
