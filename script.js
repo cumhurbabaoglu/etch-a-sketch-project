@@ -1,14 +1,19 @@
 const container = document.querySelector("#container");
 
-for (let i = 1; i <= 256; i++) {
+function createGrid(num) {
+    for (let i = 1; i <= (num **2); i++) {
     const div = document.createElement("div");
     div.classList.add("grid-cell");
+    div.style.height = `${100 / num}%`;
+    div.style.width = `${100 / num}%`;
     container.appendChild(div);
 
     div.addEventListener("mouseover", (e) => {
         e.target.style.backgroundColor = "green";
     })
-}
+}}
+
+createGrid(16);
 
 const gridSizePrompt = document.querySelector("#grid-size");
 
@@ -25,17 +30,7 @@ gridSizePrompt.addEventListener("click", () => {
         container.removeChild(container.firstChild);
 }
 
-      for (let i = 1; i <= ((+userChoice) ** 2); i++) {
-        const div = document.createElement("div");
-        div.classList.add("grid-cell");
-        div.style.height = `${100 / +userChoice}%`;
-        div.style.width = `${100 / +userChoice}%`;
-        container.appendChild(div);
-
-        div.addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor = "green";
-    })
-      }
+      createGrid(+userChoice);
     }
 })
 
