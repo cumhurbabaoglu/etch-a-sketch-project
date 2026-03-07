@@ -9,3 +9,5 @@ for (let i = 1; i <= 256; i++) {
         e.target.style.backgroundColor = "green";
     })
 }
+
+const gridSizePrompt = document.querySelector("#grid-size");
