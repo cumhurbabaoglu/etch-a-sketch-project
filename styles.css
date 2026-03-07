@@ -26,6 +26,7 @@ body {
     border: 2px solid black;
     flex-shrink: 0;
     background-color: white;
+    cursor: url(signature_1378356.png), auto;
 }
 
 button {
