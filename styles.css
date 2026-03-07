@@ -3,3 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.grid-cell {
+    border: 1px solid black;
+    height: 6.25%;
+    width: 6.25%;
+}
