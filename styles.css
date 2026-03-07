@@ -26,4 +26,5 @@ body {
     flex-wrap: wrap;
     border: 2px solid black;
     flex-shrink: 0;
+    background-color: white;
 }
