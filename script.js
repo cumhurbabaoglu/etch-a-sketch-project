@@ -38,3 +38,14 @@ gridSizePrompt.addEventListener("click", () => {
       }
     }
 })
+
+const cleanBoard = document.querySelector("#clean-board");
+
+cleanBoard.addEventListener("click", () => {
+    const allCells = document.querySelectorAll(".grid-cell");
+
+    allCells.forEach(cell => {
+        cell.style.backgroundColor = "white";
+        // 22. burada "white" yerine hardcode olarak yazmadan ""; şeklinde ekle 
+    })
+})
