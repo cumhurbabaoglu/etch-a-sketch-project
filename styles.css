@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eef4ed;
+    flex-direction: column;
 
 }
 
