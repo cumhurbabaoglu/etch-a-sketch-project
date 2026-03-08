@@ -46,6 +46,7 @@ cleanBoard.addEventListener("click", () => {
 
 const rainbowButton = document.querySelector("#rainbow-mode");
 const eraserButton = document.querySelector("#eraser-mode");
+const defaultButton = document.querySelector("#default-mode");
 
 
 function randomizeColor() {
