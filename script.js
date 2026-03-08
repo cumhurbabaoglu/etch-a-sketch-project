@@ -55,7 +55,7 @@ function randomizeColor() {
 
 let rainbowMode = false;
 let eraserMode = false;
-let defaultMode = false;
+let defaultMode = true;
 
 
 rainbowButton.addEventListener("click", () => {
