@@ -59,6 +59,7 @@ function randomizeColor() {
 
 let rainbowMode = false;
 let eraserMode = false;
+let defaultMode = false;
 
 
 rainbowButton.addEventListener("click", () => {
@@ -69,6 +70,11 @@ rainbowButton.addEventListener("click", () => {
 eraserButton.addEventListener("click", () => {
     eraserMode = true;
     rainbowMode = false;
+})
+
+defaultButton.addEventListener("click", () => {
+    rainbowMode = false;
+    eraserMode = false;
 })
 
 container.addEventListener("mouseover", (e) => {
