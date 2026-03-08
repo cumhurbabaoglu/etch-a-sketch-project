@@ -45,3 +45,11 @@ cleanBoard.addEventListener("click", () => {
 })
 
 const rainbowButton = document.querySelector("#rainbow-mode");
+
+function randomizeColor() {
+    const first = Math.floor(Math.random() * 256);
+    const second = Math.floor(Math.random() * 256);
+    const third = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${first}, ${second}, ${third})`;
+    return randomColor;
+}
