@@ -43,3 +43,5 @@ cleanBoard.addEventListener("click", () => {
         cell.style.backgroundColor = "";
     })
 })
+
+const rainbowButton = document.querySelector("#rainbow-mode");
