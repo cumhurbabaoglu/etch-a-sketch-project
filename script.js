@@ -53,3 +53,16 @@ function randomizeColor() {
     const randomColor = `rgb(${first}, ${second}, ${third})`;
     return randomColor;
 }
+
+let rainbowMode = false;
+
+rainbowButton.addEventListener("click", () => {
+    rainbowMode = true;
+})
+
+container.addEventListener("mouseover", (e) => {
+    if (rainbowMode === true && e.target.matches(".grid-cell")) {
+       e.target.style.backgroundColor = randomizeColor();
+       e.target.style.opacity = 0.7;
+    }
+})
