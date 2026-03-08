@@ -7,10 +7,6 @@ function createGrid(num) {
     div.style.height = `${100 / num}%`;
     div.style.width = `${100 / num}%`;
     container.appendChild(div);
-
-    div.addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor = "black";
-    })
 }}
 
 createGrid(16);
