@@ -9,7 +9,7 @@ function createGrid(num) {
     container.appendChild(div);
 
     div.addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor = "green";
+        e.target.style.backgroundColor = "black";
     })
 }}
 
