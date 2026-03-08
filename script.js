@@ -82,6 +82,7 @@ container.addEventListener("mouseover", (e) => {
     }
     if (eraserMode === true && e.target.matches(".grid-cell")) {
         e.target.style.backgroundColor = "";
+        container.style.cursor = "url(eraser_11792401.png), auto";
     }
     if (defaultMode === true && e.target.matches(".grid-cell")) {
         e.target.style.backgroundColor = "black";
