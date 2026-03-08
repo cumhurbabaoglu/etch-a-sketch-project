@@ -88,4 +88,7 @@ container.addEventListener("mouseover", (e) => {
     if (eraserMode === true && e.target.matches(".grid-cell")) {
         e.target.style.backgroundColor = "";
     }
+    if (defaultMode === true && e.target.matches(".grid-cell")) {
+        e.target.style.backgroundColor = "black";
+    }
 })
