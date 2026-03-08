@@ -64,10 +64,11 @@ rainbowButton.addEventListener("click", () => {
     defaultMode = false;
 })
 
-eraserButton.addEventListener("click", () => {
+eraserButton.addEventListener("click", (e) => {
     eraserMode = true;
     rainbowMode = false;
     defaultMode = false;
+    e.target.style.cursor = "url(eraser_11792401.png), auto";
 })
 
 defaultButton.addEventListener("click", () => {
@@ -82,7 +83,6 @@ container.addEventListener("mouseover", (e) => {
     }
     if (eraserMode === true && e.target.matches(".grid-cell")) {
         e.target.style.backgroundColor = "";
-        container.style.cursor = "url(eraser_11792401.png), auto";
     }
     if (defaultMode === true && e.target.matches(".grid-cell")) {
         e.target.style.backgroundColor = "black";
