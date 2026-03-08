@@ -62,10 +62,12 @@ let eraserMode = false;
 
 rainbowButton.addEventListener("click", () => {
     rainbowMode = true;
+    eraserMode = false;
 })
 
 eraserButton.addEventListener("click", () => {
     eraserMode = true;
+    rainbowMode = false;
 })
 
 container.addEventListener("mouseover", (e) => {
