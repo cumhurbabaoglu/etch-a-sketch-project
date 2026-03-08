@@ -64,11 +64,11 @@ rainbowButton.addEventListener("click", () => {
     defaultMode = false;
 })
 
-eraserButton.addEventListener("click", (e) => {
+eraserButton.addEventListener("click", () => {
     eraserMode = true;
     rainbowMode = false;
     defaultMode = false;
-    e.target.style.cursor = "url(eraser_11792401.png), auto";
+    container.style.cursor = "url(eraser_11792401.png), auto";
 })
 
 defaultButton.addEventListener("click", () => {
