@@ -62,6 +62,7 @@ rainbowButton.addEventListener("click", () => {
     rainbowMode = true;
     eraserMode = false;
     defaultMode = false;
+    container.style.cursor = "url(signature_1378356.png), auto";
 })
 
 eraserButton.addEventListener("click", () => {
@@ -75,6 +76,7 @@ defaultButton.addEventListener("click", () => {
     defaultMode = true;
     rainbowMode = false;
     eraserMode = false;
+    container.style.cursor = "url(signature_1378356.png), auto";
 })
 
 container.addEventListener("mouseover", (e) => {
