@@ -65,14 +65,17 @@ let defaultMode = false;
 rainbowButton.addEventListener("click", () => {
     rainbowMode = true;
     eraserMode = false;
+    defaultMode = false;
 })
 
 eraserButton.addEventListener("click", () => {
     eraserMode = true;
     rainbowMode = false;
+    defaultMode = false;
 })
 
 defaultButton.addEventListener("click", () => {
+    defaultMode = true;
     rainbowMode = false;
     eraserMode = false;
 })
