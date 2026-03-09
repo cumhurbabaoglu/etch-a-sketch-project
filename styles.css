@@ -46,3 +46,9 @@ button:hover {
     display: flex;
     gap: 20px;
 }
+
+.mode-button:focus {
+    background-color: #69af49;
+    color: white;
+    box-shadow: inset 0.25px 0.25px 0.25px 0.25px #69af49;
+}
