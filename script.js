@@ -79,7 +79,18 @@ defaultButton.addEventListener("click", () => {
     container.style.cursor = "url(signature_1378356.png), auto";
 })
 
+let isDrawing = true;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === " ") {
+        isDrawing = !isDrawing;
+    }
+})
+
 container.addEventListener("mouseover", (e) => {
+    if (isDrawing === false) {
+        return;
+    }
     if (rainbowMode === true && e.target.matches(".grid-cell")) {
        e.target.style.backgroundColor = randomizeColor();
     }
