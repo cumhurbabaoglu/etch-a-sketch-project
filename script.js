@@ -91,13 +91,15 @@ container.addEventListener("mouseover", (e) => {
     if (isDrawing === false) {
         return;
     }
-    if (rainbowMode === true && e.target.matches(".grid-cell")) {
-       e.target.style.backgroundColor = randomizeColor();
-    }
-    if (eraserMode === true && e.target.matches(".grid-cell")) {
-        e.target.style.backgroundColor = "";
-    }
-    if (defaultMode === true && e.target.matches(".grid-cell")) {
-        e.target.style.backgroundColor = "black";
+    if (e.target.matches(".grid-cell")) {
+        if (rainbowMode) {
+          e.target.style.backgroundColor = randomizeColor();
+        }
+        if (eraserMode) {
+          e.target.style.backgroundColor = "";
+        }
+        if (defaultMode) {
+          e.target.style.backgroundColor = "black";
+        }
     }
 })
