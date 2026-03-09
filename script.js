@@ -83,6 +83,7 @@ let isDrawing = true;
 
 document.addEventListener("keydown", (e) => {
     if (e.key === " ") {
+        e.preventDefault();
         isDrawing = !isDrawing;
     }
 })
