@@ -15,13 +15,10 @@ const gridSizePrompt = document.querySelector("#grid-size");
 
 gridSizePrompt.addEventListener("click", () => {
     const userChoice = prompt("Enter number of squares per side (maximum value is 100)");
-    if (userChoice.trim() === "" || Number.isInteger(+userChoice) === false) {
+    if (userChoice.trim() === "" || Number.isInteger(+userChoice) === false || +userChoice > 100 || +userChoice <= 0) {
         alert("Please enter a numeric value.");
-        return;
-    } else if (+userChoice > 100) {
-        alert("Please enter a value less than 100");
-        return;
-    } else {
+    }
+    else {
         while (container.firstChild) {
         container.removeChild(container.firstChild);
 }
