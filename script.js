@@ -103,3 +103,11 @@ container.addEventListener("mouseover", (e) => {
 })
 
 const switchGridBorderButton = document.querySelector("#switch-grid-borders");
+
+switchGridBorderButton.addEventListener("click", () => {
+    const allCells = document.querySelectorAll(".grid-cell");
+
+    allCells.forEach(cell => {
+        cell.classList.toggle("borderless");
+    })
+})

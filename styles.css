@@ -65,3 +65,7 @@ p span {
     color: green;
     font-weight: bold;
 }
+
+.grid-cell.borderless {
+    border: none;
+}
