@@ -4,7 +4,6 @@
 
 This is an interactive browser-based drawing application built with HTML, CSS and vanilla JS as part of The Odin Project curriculum. It allows the user to draw in default or rainbow mode, which uses randomized RGB colors, adjust the grid size, erase cells, and clean the board.
 
-
 # Live Demo
 
 [Live Demo](https://cumhurbabaoglu.github.io/etch-a-sketch-project/)
@@ -14,6 +13,7 @@ This is an interactive browser-based drawing application built with HTML, CSS an
 - Default drawing mode
 - Eraser
 - Clean the board
+- Switch on/off grid borders
 - Dynamic grid generation
 - Grid resizing (up to 100x100)
 - Keyboard shortcut to start and pause drawing
