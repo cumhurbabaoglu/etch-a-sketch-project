@@ -101,3 +101,5 @@ container.addEventListener("mouseover", (e) => {
         }
     }
 })
+
+const switchGridBorderButton = document.querySelector("#switch-grid-borders");
