@@ -43,3 +43,4 @@ This is an interactive browser-based drawing application built with HTML, CSS an
 # Screenshot
 
 ![Screenshot](Screenshot.png)
+![Screenshot](Screenshot2.png)
